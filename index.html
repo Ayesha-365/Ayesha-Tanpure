@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Explore Beautiful Pune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">Explore Pune</h2>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#places">Places</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore Beautiful Pune</h1>
+      <p>Discover hidden gems, historical forts and nature spots in Pune</p>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search places like Sinhagad, Mulshi...">
+        <button onclick="searchPlace()">🔍</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP ATTRACTIONS -->
+  <section class="top-places">
+    <h2>Top Attractions in Pune</h2>
+    <div class="top-cards">
+      <div class="top-card">
+        <img src="https://www.savaari.com/blog/wp-content/uploads/2022/11/Shaniwaarwada_Pune_11zon.jpg">
+        <h3>Shaniwar Wada</h3>
+      </div>
+      <div class="top-card">
+        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ae/b6/cc.jpg">
+        <h3>Sinhagad Fort</h3>
+      </div>
+      <div class="top-card">
+        <img src="https://youtellme.ai/wp-content/uploads/2024/10/DJI_0867-scaled.jpg">
+        <h3>Mulshi Dam</h3>
+      </div>
+      <div class="top-card">
+        <img src="https://hblimg.mmtcdn.com/content/hubble/img/pune/mmt/activities/m_activities_pune_aga_khan_palace_l_358_536.jpg">
+        <h3>Aga Khan Palace</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR PLACES -->
+  <section class="places" id="places">
+    <h2>Popular Places in Pune</h2>
+    <div class="places-grid">
+      <div class="card">
+        <img src="https://cdn.guidetour.in/wp-content/uploads/2018/10/Khadakwasla-Dam-Pune.jpg.webp">
+        <h3>Khadakwasla Dam</h3>
+        <p>Popular sunset and picnic spot.</p>
+        <button onclick="showDetails('Khadakwasla Dam','Best time: Oct-Feb | Entry: Free | Great for sunset views')">View Details</button>
+      </div>
+      <div class="card">
+        <img src="https://images.staybook.in/rajiv-gandhi-zoological-park/2.jpg">
+        <h3>Rajiv Gandhi Zoological Park</h3>
+        <p>A large zoo with animals and birds.</p>
+        <button onclick="showDetails('Rajiv Gandhi Zoo','Time: 9AM-5PM | Entry: ₹50 | Family friendly place')">View Details</button>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-YkM86qf1wjjY0-VUsHwMzwPfVbrKRC3ll_jXWZ4Y-OG4Wj7xADMd5uSFUodQ6VtGywfVVRGDHP8CuaxtelC7K2mxlzyUWyMpFrUh5I8KsvCNBQDJHNLTHnn2nfyW2FwXuqjs/s400/pataleshwar_nandi.jpg">
+        <h3>Pataleshwar Cave Temple</h3>
+        <p>Ancient rock-cut temple dedicated to Lord Shiva.</p>
+        <button onclick="showDetails('Pataleshwar Temple','Best time: Morning | Entry: Free | Historical cave temple')">View Details</button>
+      </div>
+      <div class="card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/44/bd/51/caption.jpg">
+        <h3>Lal Mahal</h3>
+        <p>A historic palace connected with Shivaji Maharaj.</p>
+        <button onclick="showDetails('Lal Mahal','Historic palace | Built in 1630 | Entry: Free')">View Details</button>
+      </div>
+      <div class="card">
+        <img src="https://utsav.gov.in/public/uploads/darshan_cover_image/darshan_42/1651224930143200465.jpg">
+        <h3>Dagdusheth Ganpati</h3>
+        <p>Famous Ganpati temple in Pune.</p>
+        <button onclick="showDetails('Dagdusheth Ganpati','Best during Ganesh festival | Entry: Free | Religious site')">View Details</button>
+      </div>
+      <div class="card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/aa/36/3d/pu-la-deshpande-garden.jpg">
+        <h3>Pu La Deshpande Garden</h3>
+        <p>A beautiful Japanese-style garden.</p>
+        <button onclick="showDetails('Pu La Garden','Entry: ₹10 | Best for evening walks')">View Details</button>
+      </div>
+<div class="card">
+  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/ad/26/47/garden.jpg?w=1200&h=-1&s=1">
+  <h3>Empress Garden</h3>
+  <p>A botanical garden with lush greenery.</p>
+  <button onclick="showDetails('Empress Garden','Best season: Winter | Entry: Free | Ideal for morning walks and picnics')">View Details</button>
+</div>
+
+<div class="card">
+  <img src="https://www.townpune.com/wp-content/uploads/2017/06/OSHO-TEERTH-PARK.jpg">
+  <h3>Osho Garden</h3>
+  <p>Peaceful meditation garden with beautiful greenery.</p>
+  <button onclick="showDetails('Osho Garden','Best time: Morning | Entry: Free | Perfect for meditation and relaxation')">View Details</button>
+</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About This Website</h2>
+    <p>This website helps tourists explore beautiful places in Pune. Visitors can discover historical monuments, forts, temples and hidden gems.</p>
+    <p>Created to guide travelers and make exploring Pune easier.</p>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    // Search opens page
+    function searchPlace() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+
+      if (input.includes("shaniwar")) window.location.href = "shaniwarwada.html";
+      else if (input.includes("sinhagad")) window.location.href = "sinhagad.html";
+      else if (input.includes("mulshi")) window.location.href = "mulshi.html";
+      else if (input.includes("khadakwasla")) window.location.href = "khadakwasla.html";
+      else alert("Place not found. Try another search.");
+    }
+
+    // Modal for view details
+    function showDetails(title, text) {
+      document.getElementById("modal").style.display = "block";
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalText").innerText = text;
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
